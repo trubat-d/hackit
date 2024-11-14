@@ -14,6 +14,6 @@
 
 * [VLAN](network/vlan.md)
 
-## DFIR
+## THM - LABS
 
-* [not page one](dfir/not-page-one.md)
+* [not page one](thm-labs/not-page-one.md)

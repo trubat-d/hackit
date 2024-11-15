@@ -48,14 +48,125 @@ They are the base keys that will hold multiple sub-keys. Here is the list of Roo
 
 
 
-* Amcache Hive - save info on programs recently run on system - `C:\\Windows\\AppCompat\\Programs\\Amcache.hve`
+* Amcache Hive - save info on programs recently run on system - `C:\Windows\AppCompat\Programs\Amcache.hve`
 *   NTUSER.DAT - infos about user profile directory
 
-    `C:\\Users\\<username>\\`
-* Logs for chantges in Registry Hives - `C:\\Windows\\System32\\Config` files as `.LOG` extension
-* Backups of hives are made every 10 days - `C:\\Windows\\System32\\Config\\RegBack`
+    `C:\Users\<username>\`
+* Logs for chantges in Registry Hives - `C:\Windows\System32\Config` files as `.LOG` extension
+* Backups of hives are made every 10 days - `C:\Windows\System32\Config\RegBack`
 
 
 
+### Transaction Logs
+
+Logs containing the data about the modified values and keys inside of Hives
 
 
+
+***
+
+
+
+#### OS Version
+
+```
+SOFTWARE\Microsoft\Windows NT\CurrentVersion
+```
+
+#### Control set
+
+machine’s configuration data used for controlling system startup are called Control Set
+
+```
+SYSTEM\ControlSet001 - commonly the control set that machine booted with
+SYSTEM\ControlSet002 - last known good configuration
+SYSTEM\Select\LastKnownGood
+```
+
+#### Volatile Control Set
+
+control set when machine is live
+
+```
+HKLM\SYSTEM\CurrentControlSet
+SYSTEM\Select\Current
+```
+
+#### Computer Name
+
+```
+SYSTEM\CurrentControlSet\Control\ComputerName\ComputerName
+```
+
+#### Time Zone Info
+
+```
+SYSTEM\CurrentControlSet\Control\TimeZoneInformation
+```
+
+#### Network Interfaces and Past Networks
+
+```
+SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces
+```
+
+Each Interface is represented with a unique identifier (GUID) subkey, which contains values relating to the interface’s TCP/IP configuration.
+
+This key will provide us with information like IP addresses, DHCP IP address and Subnet Mask, DNS Servers, and more.
+
+The past networks a given machine was connected to can be found in the following locations:
+
+```
+SOFTWARE\Microsoft\Windows NT\CurrentVersion\NetworkList\Signatures\Unmanaged
+SOFTWARE\Microsoft\Windows NT\CurrentVersion\NetworkList\Signatures\Managed
+```
+
+These registry keys contain past networks as well as the last time they were connected. The last write time of the registry key points to the last time these networks were connected.
+
+#### Autostart Programs
+
+programs that run on user logon
+
+```
+NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Run
+NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\RunOnce
+SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce
+SOFTWARE\Microsoft\Windows\CurrentVersion\policies\Explorer\Run
+SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+```
+
+#### Services
+
+```
+SYSTEM\CurrentControlSet\Services
+```
+
+#### Same Hive and User info
+
+The SAM hive contains user account information, login information, and group information.
+
+```
+SAM\Domains\Account\Users
+```
+
+The information contained here includes the relative identifier (RID) of the user, number of times the user logged in, last login time, last failed login, last password change, password expiry, password policy and password hint, and any groups that the user is a part of.
+
+
+
+***
+
+#### Recently Opened Files
+
+```
+NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs
+```
+
+In Registry explorer : looking for last used PDF files:
+
+```
+NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.pdf
+```
+
+Replace extension with the one you are interested in
+
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>

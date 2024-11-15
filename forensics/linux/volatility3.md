@@ -14,7 +14,7 @@ It has no profiles like vol2, it uses profiles automaticaly based on plugins
 
 OS not known plugin:
 
-* imageinfo#
+* imageinfo
 
 Process Listing:
 
@@ -41,3 +41,29 @@ scan the heap for executables with bit set to RWE or RX
 #### Compare against yara rules
 
 * yarascan
+
+### Typers of Hooks for malware evasion:
+
+* SSDT Hooks - System Service Descriptor Table
+* IRP Hooks
+* IAT Hooks
+* EAT Hooks
+* In line Hooks
+
+#### SSDT plugin:
+
+* ssdt
+
+#### List of loaded kernel modules:
+
+* modules
+
+### Other intersting modules for searching for malwares in memory:
+
+* `modscan`
+* `driverirp`
+* `callbacks`
+* `idt`
+* `apihooks`
+* `moddump`
+* `handle`

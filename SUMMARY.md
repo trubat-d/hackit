@@ -14,9 +14,14 @@
   * [Zimmerman's Registry Explorer](forensics/windows/zimmermans-registry-explorer.md)
   * [RegRipper](forensics/windows/regripper.md)
   * [Registry Editor](forensics/windows/registry-editor.md)
-* [Linux](forensics/linux.md)
-* [Volatility3](forensics/volatility3.md)
+* [Linux](forensics/linux/README.md)
+  * [Volatility3](forensics/linux/volatility3.md)
 
 ## References
 
 * [Glossary](references/glossary.md)
+
+## Group 1
+
+* [Tryhackme Rooms](group-1/tryhackme-rooms/README.md)
+  * [Memory Forensics](group-1/tryhackme-rooms/memory-forensics.md)

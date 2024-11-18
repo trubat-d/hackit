@@ -8,24 +8,32 @@ Install:
 
 With sufficient access rights:
 
-Vol3
-
+{% tabs %}
+{% tab title="V3" %}
 ```
 git clone https://github.com/volatilityfoundation/volatility3.git
 cd volatility3
 python3 setup.py install
 python3 vol.py —h
 ```
+{% endtab %}
 
-Vol2
+{% tab title="V3 Symbols" %}
+Install at volatility3/volatility/symbols
 
+* [https://downloads.volatilityfoundation.org/volatility3/symbols/windows.zip](https://downloads.volatilityfoundation.org/volatility3/symbols/windows.zip)
+* [https://downloads.volatilityfoundation.org/volatility3/symbols/mac.zip](https://downloads.volatilityfoundation.org/volatility3/symbols/mac.zip)
+* [  https://downloads.volatilityfoundation.org/volatility3/symbols/linux.zip](https://downloads.volatilityfoundation.org/volatility3/symbols/linux.zip)
+{% endtab %}
+
+{% tab title="V2" %}
 ```
 git clone https://github.com/volatilityfoundation/volatility.git
 cd volatility
 python setup.py install
 ```
-
-
+{% endtab %}
+{% endtabs %}
 
 Profiles in Vol3
 
@@ -202,7 +210,9 @@ vol -f “/path/to/file” windows.handles ‑‑pid <PID>
 
 {% tabs %}
 {% tab title="V3" %}
-<pre><code><strong>vol -f “/path/to/file” windows.dlllist ‑‑pid &#x3C;PID>v
+PID, process, base, size, name, path, loadtime, file output
+
+<pre><code><strong>vol -f “/path/to/file” windows.dlllist ‑‑pid &#x3C;PID>
 </strong></code></pre>
 {% endtab %}
 
@@ -215,37 +225,27 @@ vol.py -f “/path/to/file” ‑‑profile <profile> dlllist -p <PID>
 {% endtab %}
 {% endtabs %}
 
-
-
-Output differences:
-
-*
-
-```
-vol.py -f “/path/to/file” ‑‑profile <profile> dlllist -p <PID>
-```
-
-* Volatility 3: PID, process, base, size, name, path, loadtime, file output
-
-```
-vol -f “/path/to/file” windows.dlllist ‑‑pid <PID>
-```
-
 ### CMDLine
 
-Output differences:
-
-* Volatility 2: process name, PID, commandline; cmdscan includes application, flags, process handle; consoles contains C:\ listing, original titles, screen position and command history information
-
-```
-vol.py -f “/path/to/file” ‑‑profile <profile> <cmdline/cmdscan/consoles>
-```
-
-* Volatility 3: PID, process name, args
+{% tabs %}
+{% tab title="V3" %}
+&#x20;PID, process name, args
 
 ```
 vol -f “/path/to/file” windows.cmdline.CmdLine
 ```
+{% endtab %}
+
+{% tab title="V2" %}
+process name, PID, commandline; cmdscan includes application, flags, process handle; consoles contains C:\ listing, original titles, screen position and command history information
+
+```
+vol.py -f “/path/to/file” ‑‑profile <profile> cmdline
+vol.py -f “/path/to/file” ‑‑profile <profile> cmdscan
+vol.py -f “/path/to/file” ‑‑profile <profile> consoles
+```
+{% endtab %}
+{% endtabs %}
 
 If searching for history of closed cmd sessions, its in `conhost.exe` and can be searched by dumping the process and reading it with strings
 
@@ -254,34 +254,26 @@ If searching for history of closed cmd sessions, its in `conhost.exe` and can be
 {% tabs %}
 {% tab title="V3" %}
 ```
-vol --f    
+vol -f “/path/to/file” windows.netscan
+vol -f “/path/to/file” windows.netstat
 ```
 {% endtab %}
 
 {% tab title="V2" %}
-
-{% endtab %}
-{% endtabs %}
-
-
-
-V2
-
-```
-vol.py -f “/path/to/file” ‑‑profile <profile> <netscan/netstat>
-```
+<pre><code><strong>vol.py -f “/path/to/file” ‑‑profile &#x3C;profile> netscan
+</strong>vol.py -f “/path/to/file” ‑‑profile &#x3C;profile> netstat
+</code></pre>
 
 Note: The XP/2003 specific plugins are deprecated and therefore not available in Volatility 3
 
 ```
-vol.py -f “/path/to/file” ‑‑profile <profile> <connscan/connections/sockscan/sockets>
+vol.py -f “/path/to/file” ‑‑profile <profile> connscan
+vol.py -f “/path/to/file” ‑‑profile <profile> connections
+vol.py -f “/path/to/file” ‑‑profile <profile> sockscan
+vol.py -f “/path/to/file” ‑‑profile <profile> sockets
 ```
-
-V3
-
-```
-vol -f “/path/to/file” windows.<netscan/netstat>
-```
+{% endtab %}
+{% endtabs %}
 
 ### Env variables per process
 
@@ -312,126 +304,166 @@ volatility --profile=PROFILE -f file.dmp linux_psenv [-p <pid>]
 
 ### Token Privileges
 
-```
-V2
+{% tabs %}
+{% tab title="V3" %}
+```sh
 #Get enabled privileges of some processes
-volatility --profile=Win7SP1x86_23418 privs --pid=3152 -f file.dmp | grep Enabled
+vol -f file.dmp windows.privileges.Privs [--pid <pid>]
+
+#Get all processes with interesting privileges
+vol -f file.dmp windows.privileges.Privs | grep "SeImpersonatePrivilege\|SeAssignPrimaryPrivilege\|SeTcbPrivilege\|SeBackupPrivilege\|SeRestorePrivilege\|SeCreateTokenPrivilege\|SeLoadDriverPrivilege\|SeTakeOwnershipPrivilege\|SeDebugPrivilege"
+```
+{% endtab %}
+
+{% tab title="V2" %}
+<pre><code><strong>#Get enabled privileges of some processes
+</strong>volatility --profile=Win7SP1x86_23418 privs --pid=3152 -f file.dmp | grep Enabled
 
 #Get all processes with interesting privileges
 volatility --profile=Win7SP1x86_23418 privs -f file.dmp | grep "SeImpersonatePrivilege\|SeAssignPrimaryPrivilege\|SeTcbPrivilege\|SeBackupPrivilege\|SeRestorePrivilege\|SeCreateTokenPrivilege\|SeLoadDriverPrivilege\|SeTakeOwnershipPrivilege\|SeDebugPrivilege"
-
-V3
-#Get enabled privileges of some processes
-python3 vol.py -f file.dmp windows.privileges.Privs [--pid <pid>]
-
-#Get all processes with interesting privileges
-python3 vol.py -f file.dmp windows.privileges.Privs | grep "SeImpersonatePrivilege\|SeAssignPrimaryPrivilege\|SeTcbPrivilege\|SeBackupPrivilege\|SeRestorePrivilege\|SeCreateTokenPrivilege\|SeLoadDriverPrivilege\|SeTakeOwnershipPrivilege\|SeDebugPrivilege"
-```
+</code></pre>
+{% endtab %}
+{% endtabs %}
 
 ### SIDs
 
+{% tabs %}
+{% tab title="V3" %}
+```sh
+vol -f file.dmp windows.getsids.GetSIDs [--pid <pid>] #Get SIDs of processes
+vol -f file.dmp windows.getservicesids.GetServiceSIDs #Get the SID of services
 ```
-V2
-V3
+{% endtab %}
+
+{% tab title="V2" %}
+```sh
 volatility --profile=Win7SP1x86_23418 getsids -f file.dmp 
 #Get the SID owned by each process
 
 volatility --profile=Win7SP1x86_23418 getservicesids -f file.dmp 
 #Get the SID of each service
 ```
-
-{% tabs %}
-{% tab title="V3" %}
-<pre class="language-shell"><code class="lang-shell"><strong>volatility --profile=PROFILE getsids -f file.dmp 
-</strong>#Get the SID owned by each process
-
-volatility --profile=PROFILE getservicesids -f file.dmp 
-#Get the SID of each servicezs
-</code></pre>
-{% endtab %}
-
-{% tab title="V2" %}
-
 {% endtab %}
 {% endtabs %}
 
-
-
 ## Hivelist
 
-<pre><code><strong>V2
-</strong><strong>vol.py -f “/path/to/file” ‑‑profile &#x3C;profile> &#x3C;hivescan/hivelist>
-</strong>V3
-vol -f “/path/to/file” windows.registry.&#x3C;hivescan/hivelist>
+{% tabs %}
+{% tab title="V3" %}
+```sh
+vol -f “/path/to/file” windows.registry.hivescan
+vol -f “/path/to/file” windows.registry.hivelist
+```
+{% endtab %}
+
+{% tab title="V2" %}
+<pre><code><strong>vol.py -f “/path/to/file” ‑‑profile &#x3C;profile> hivescan
+</strong>vol.py -f “/path/to/file” ‑‑profile &#x3C;profile> hivelist
 </code></pre>
+{% endtab %}
+{% endtabs %}
 
 ### Printkey
 
-```
-V2
-vol.py -f “/path/to/file” ‑‑profile <profile> printkey <-K "Key Path">
-V3
+{% tabs %}
+{% tab title="V3" %}
+```sh
 vol -f “/path/to/file” windows.registry.printkey <--key "Key path">
 ```
+{% endtab %}
+
+{% tab title="V2" %}
+```
+vol.py -f “/path/to/file” ‑‑profile <profile> printkey <-K "Key Path">
+```
+{% endtab %}
+{% endtabs %}
 
 ### HiveDump
 
-```
-V2
+{% tabs %}
+{% tab title="V2" %}
+```sh
 vol.py -f “/path/to/file” ‑‑profile hivedump -o <offset>
 ```
+{% endtab %}
+{% endtabs %}
 
 ## Files
 
 ### Filescan
 
-```
-V2
-vol.py -f “/path/to/file” ‑‑profile <profile> filescan
-V3
+{% tabs %}
+{% tab title="V3" %}
+```sh
 vol -f “/path/to/file” windows.filescan
 ```
+{% endtab %}
+
+{% tab title="V2" %}
+```
+vol.py -f “/path/to/file” ‑‑profile <profile> filescan
+```
+{% endtab %}
+{% endtabs %}
 
 ### Filedump
 
-```
-V2
-vol.py -f “/path/to/file” ‑‑profile <profile> dumpfiles ‑‑dump-dir=“/path/to/dir”
-<-Q <offset>> <-p <PID>>
-V3
+{% tabs %}
+{% tab title="V3" %}
+```sh
 vol -f “/path/to/file” -o “/path/to/dir” windows.dumpfiles
 <‑‑virtaddr <offset>> <‑‑physaddr <offset>>
 ```
+{% endtab %}
+
+{% tab title="V2" %}
+<pre><code>vol.py -f “/path/to/file” ‑‑profile &#x3C;profile> dumpfiles ‑‑dump-dir=“/path/to/dir”
+<strong>&#x3C;-Q &#x3C;offset>> &#x3C;-p &#x3C;PID>>
+</strong></code></pre>
+{% endtab %}
+{% endtabs %}
 
 ## Miscellaneous
 
 Output differences:
 
-* Volatility 2: PID, process name, address, VAD tags, hexdump, and shellcode
-
-```
-vol.py -f “/path/to/file” ‑‑profile <profile> malfind
-```
-
-* Volatility 3: PID, process name, process start, protection, commit charge, privatememory, file output, hexdump disassembly
+{% tabs %}
+{% tab title="First Tab" %}
+PID, process name, process start, protection, commit charge, privatememory, file output, hexdump disassembly
 
 ```
 vol -f “/path/to/file” windows.malfind
 ```
+{% endtab %}
+
+{% tab title="Second Tab" %}
+PID, process name, address, VAD tags, hexdump, and shellcode
+
+```
+vol.py -f “/path/to/file” ‑‑profile <profile> malfind
+```
+{% endtab %}
+{% endtabs %}
 
 ### Yarascan
 
+{% tabs %}
+{% tab title="V3" %}
 ```
-V2
-vol.py -f “/path/to/file” yarascan -y “/path/to/file.yar”
-V3
 vol.py -f “/path/to/file” windows.vadyarascan 
 <‑‑yara-rules <string>>
 <‑‑yara-file “/path/to/file.yar”>
 <‑‑yara-file “/path/to/file.yar”>
 ```
+{% endtab %}
 
-
+{% tab title="V2" %}
+```
+vol.py -f “/path/to/file” yarascan -y “/path/to/file.yar”
+```
+{% endtab %}
+{% endtabs %}
 
 ## References
 

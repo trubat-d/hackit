@@ -17,11 +17,28 @@
   * [Registry Editor](forensics/windows/registry-editor.md)
 * [Linux](forensics/linux.md)
 
+## Privilege Escalation
+
+* [Linux](privilege-escalation/linux/README.md)
+  * [Enumeration](privilege-escalation/linux/enumeration.md)
+  * [Kernel Exploit](privilege-escalation/linux/kernel-exploit.md)
+  * [SUID](privilege-escalation/linux/suid.md)
+  * [Capabilities](privilege-escalation/linux/capabilities.md)
+  * [Cronjobs](privilege-escalation/linux/cronjobs.md)
+  * [PATH](privilege-escalation/linux/path.md)
+  * [NFS](privilege-escalation/linux/nfs.md)
+* [Linux Shells](privilege-escalation/linux-shells/README.md)
+  * [Reverse Shell](privilege-escalation/linux-shells/reverse-shell.md)
+  * [Bind shells](privilege-escalation/linux-shells/bind-shells.md)
+  * [Shell Listeners](privilege-escalation/linux-shells/shell-listeners.md)
+  * [Shell Payloads](privilege-escalation/linux-shells/shell-payloads.md)
+  * [Web Shells](privilege-escalation/linux-shells/web-shells.md)
+
+## Theory
+
+* [Security Models](theory/security-models.md)
+* [Malware Analysis](theory/malware-analysis.md)
+
 ## References
 
 * [Glossary](references/glossary.md)
-
-## Tryhackme Rooms solvs
-
-* [Tryhackme Rooms](tryhackme-rooms-solvs/tryhackme-rooms/README.md)
-  * [Memory Forensics](tryhackme-rooms-solvs/tryhackme-rooms/memory-forensics.md)

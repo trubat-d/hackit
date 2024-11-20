@@ -34,6 +34,10 @@
   * [Shell Payloads](privilege-escalation/linux-shells/shell-payloads.md)
   * [Web Shells](privilege-escalation/linux-shells/web-shells.md)
 
+## Malware Analysis
+
+* [SysInternals](malware-analysis/sysinternals.md)
+
 ## Theory
 
 * [Security Models](theory/security-models.md)

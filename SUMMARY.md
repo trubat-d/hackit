@@ -37,6 +37,12 @@
 ## Malware Analysis
 
 * [SysInternals](malware-analysis/sysinternals.md)
+* [Tools](malware-analysis/tools.md)
+* [Windows API Malware](malware-analysis/windows-api-malware.md)
+
+## Cryptography
+
+* [Pwntools](cryptography/pwntools.md)
 
 ## Theory
 

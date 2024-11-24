@@ -6,6 +6,12 @@ description: >-
 
 # NMAP
 
+Main Command
+
+```
+nmap
+```
+
 Ways to specify targets:
 
 * `-` is used to define a range : 192.168.0.1-10
@@ -15,12 +21,51 @@ Ways to specify targets:
 {% tabs %}
 {% tab title="Types of Scans" %}
 - `-sn`  Ping Scan
-
-
+- `-PS <portlist>` does a TCP syn scan
+- `-PA <portlist>` does a TCP ACK scan
+- `-PU <portlist>` does a UDP scan
+- `-sL` will list the target that will be scaned in the case of more than 1 target
+- `-sT` does a connect scan, it tries to complete TCP three-way handshake with every port
+- `-sS` does a SYN scan, it only does the first step of TCP handshake which is stealthier
+- `-sU` does a UDP scan
+- `-Pn` will force nmap to scan every port even if they the host don't reply to ICMP request during discovery phase
 {% endtab %}
 
-{% tab title="Second Tab" %}
+{% tab title="Utilities" %}
+Limiting number of ports to scan
 
+* `-F` is the fast mode, which scans the 100 most common ports instead of default 1000
+* `-p <range>` allows to specify a range of ports to scan
+* `-p-<maxport>` allows to specify a maximum port so it scans from 1 to max
+* `-p-` scans for every port and is equivalent to `-p1-65535`
+* `--min-parallelism, --max-parallelism` Minimum and maximum number of parallel probes
+* `--min-rate <num>, --max-rate <num>` Minimum and maximum rate (packets/second)
+* `--host-timeout <time>` Maximum amount of time to wait for a target host
+* `-T<VALUE>`  will offer the possiblity to select a specific timing between requests
+
+100 Ports scan example (will not be always the same depending on the networks) :
+
+| Timing          | Total Duration |
+| --------------- | -------------- |
+| T0 (paranoid)   | 9.8 hours      |
+| T1 (sneaky)     | 27.53 minutes  |
+| T2 (polite)     | 40.56 seconds  |
+| T3 (normal)     | 0.15 seconds   |
+| T4 (aggressive) | 0.13 seconds   |
+{% endtab %}
+
+{% tab title="Version Detection" %}
+* `-O` enables OS Detection
+* `-sV` service and version detection
+* `-A` enables all previous detections&#x20;
+{% endtab %}
+
+{% tab title="Output" %}
+* `-v` increased the verbosity (can use `-vv` , `-vvv`  or even `-vvvv` for more)
+* `-d` if its not enough verbosity, (can go up to `-d9`)
+* `-oN <filename>` stores as Normal Output
+* `-oX <filename>` stores as XML Output
+* `-oG <filename>` stores as grep-able output
+* `-oA <basename>` output in all major formats
 {% endtab %}
 {% endtabs %}
-

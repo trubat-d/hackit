@@ -44,6 +44,8 @@
 
 ## Cryptography
 
+* [Hashing](cryptography/hashing/README.md)
+  * [Cracking Hashes](cryptography/hashing/cracking-hashes.md)
 * [Pwntools](cryptography/pwntools.md)
 * [Asymmetric Encryption](cryptography/asymmetric-encryption/README.md)
   * [RSA](cryptography/asymmetric-encryption/rsa.md)

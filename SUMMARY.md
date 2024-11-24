@@ -7,6 +7,8 @@
 * [Digital Forensics](forensics/digital-forensics/README.md)
   * [Volatility](forensics/digital-forensics/volatility.md)
 * [Windows](forensics/windows/README.md)
+  * [Powershell](forensics/windows/powershell.md)
+  * [CMD.exe](forensics/windows/cmd.exe.md)
   * [Regedit](forensics/windows/regedit.md)
   * [KAPE](forensics/windows/kape.md)
   * [Autopsy](forensics/windows/autopsy.md)
@@ -43,6 +45,20 @@
 ## Cryptography
 
 * [Pwntools](cryptography/pwntools.md)
+
+## Network
+
+* [Tools](network/tools/README.md)
+  * [NMAP](network/tools/nmap.md)
+  * [TCPdump](network/tools/tcpdump.md)
+* [Secure Protocols](network/secure-protocols/README.md)
+  * [SSH](network/secure-protocols/ssh.md)
+  * [SFTP and FTPS](network/secure-protocols/sftp-and-ftps.md)
+  * [VPN](network/secure-protocols/vpn.md)
+* [Protocols](network/protocols/README.md)
+  * [FTP](network/protocols/ftp.md)
+  * [POP3](network/protocols/pop3.md)
+  * [IMAP](network/protocols/imap.md)
 
 ## Theory
 

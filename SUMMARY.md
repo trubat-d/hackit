@@ -36,6 +36,11 @@
   * [Shell Payloads](privilege-escalation/linux-shells/shell-payloads.md)
   * [Web Shells](privilege-escalation/linux-shells/web-shells.md)
 
+## Exploitation
+
+* [Moniker Links](exploitation/moniker-links.md)
+* [Metasploit](exploitation/metasploit.md)
+
 ## Malware Analysis
 
 * [SysInternals](malware-analysis/sysinternals.md)
@@ -70,7 +75,6 @@
 ## Theory
 
 * [Security Models](theory/security-models.md)
-* [Malware Analysis](theory/malware-analysis.md)
 
 ## References
 

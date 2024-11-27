@@ -45,6 +45,10 @@
 
 * [Windows](post-exploitation/windows/README.md)
   * [Powerview](post-exploitation/windows/powerview.md)
+  * [Bloodhound](post-exploitation/windows/bloodhound.md)
+  * [Mimiktaz](post-exploitation/windows/mimiktaz.md)
+  * [Server Manager](post-exploitation/windows/server-manager.md)
+  * [Persistence (metasploit)](post-exploitation/windows/persistence-metasploit.md)
 
 ## Malware Analysis
 

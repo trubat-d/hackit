@@ -12,6 +12,14 @@ They are different from encryption, there is no key
 * Good hashing algorithms will be relatively fast to compute and prohibitively slow to reverse, i.e., go from the output and determine the input.
 * Any slight change in the input data, even a single bit, should cause a significant change in the output.
 
+### Hash identification
+
+```
+haiti
+
+gem install haiti
+```
+
 
 
 Tools like Hashcat can give more infos about Hash types
@@ -86,3 +94,35 @@ Tools like Mimikatz are used to dump them and circumvent MS Windows security&#x2
 
 Hashes found are split into NT Hashes and LM Hashes
 
+
+
+## John rules
+
+* Border mutation - commonly used combinations of digits and special symbols can be added at the end or at the beginning, or both
+* Freak mutation - letters are replaced with similarly looking special symbols
+* Case mutation - the program checks all variations of uppercase/lowercase letters for any character
+* Order mutation - character order is reversed
+* Repetition mutation - the same group of characters are repeated several times
+* Vowels mutation - vowels are omitted or capitalized
+* Strip mutation - one or several characters are removed
+* Swap mutation - some characters are swapped and change places
+* Duplicate mutation - some characters are duplicated
+* Delimiter mutation - delimiters are added between characters
+
+{% embed url="https://www.openwall.com/john/doc/RULES.shtml" %}
+
+## Wordlist modification
+
+{% embed url="https://github.com/sc0tfree/mentalist/releases" %}
+
+web crawler for wordlist generation
+
+{% embed url="https://github.com/digininja/CeWL" %}
+
+example
+
+```
+cewl -d 2 -w $(pwd)/example.txt https://example.org
+```
+
+{% embed url="https://github.com/tp7309/TTPassGen" %}

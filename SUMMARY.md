@@ -19,27 +19,32 @@
   * [Registry Editor](forensics/windows/registry-editor.md)
 * [Linux](forensics/linux.md)
 
-## Privilege Escalation
+## Scan/Recon
 
-* [Linux](privilege-escalation/linux/README.md)
-  * [Enumeration](privilege-escalation/linux/enumeration.md)
-  * [Kernel Exploit](privilege-escalation/linux/kernel-exploit.md)
-  * [SUID](privilege-escalation/linux/suid.md)
-  * [Capabilities](privilege-escalation/linux/capabilities.md)
-  * [Cronjobs](privilege-escalation/linux/cronjobs.md)
-  * [PATH](privilege-escalation/linux/path.md)
-  * [NFS](privilege-escalation/linux/nfs.md)
-* [Linux Shells](privilege-escalation/linux-shells/README.md)
-  * [Reverse Shell](privilege-escalation/linux-shells/reverse-shell.md)
-  * [Bind shells](privilege-escalation/linux-shells/bind-shells.md)
-  * [Shell Listeners](privilege-escalation/linux-shells/shell-listeners.md)
-  * [Shell Payloads](privilege-escalation/linux-shells/shell-payloads.md)
-  * [Web Shells](privilege-escalation/linux-shells/web-shells.md)
+* [Linux](scan-recon/linux/README.md)
+  * [Enumeration](scan-recon/linux/enumeration.md)
+  * [Kernel Exploit](scan-recon/linux/kernel-exploit.md)
+  * [SUID](scan-recon/linux/suid.md)
+  * [Capabilities](scan-recon/linux/capabilities.md)
+  * [Cronjobs](scan-recon/linux/cronjobs.md)
+  * [PATH](scan-recon/linux/path.md)
+  * [NFS](scan-recon/linux/nfs.md)
+* [Linux Shells](scan-recon/linux-shells/README.md)
+  * [Reverse Shell](scan-recon/linux-shells/reverse-shell.md)
+  * [Bind shells](scan-recon/linux-shells/bind-shells.md)
+  * [Shell Listeners](scan-recon/linux-shells/shell-listeners.md)
+  * [Shell Payloads](scan-recon/linux-shells/shell-payloads.md)
+  * [Web Shells](scan-recon/linux-shells/web-shells.md)
 
 ## Exploitation
 
 * [Moniker Links](exploitation/moniker-links.md)
 * [Metasploit](exploitation/metasploit.md)
+
+## Post-exploitation
+
+* [Windows](post-exploitation/windows/README.md)
+  * [Powerview](post-exploitation/windows/powerview.md)
 
 ## Malware Analysis
 
@@ -71,6 +76,16 @@
   * [FTP](network/protocols/ftp.md)
   * [POP3](network/protocols/pop3.md)
   * [IMAP](network/protocols/imap.md)
+
+## OSINT
+
+* [Tools](osint/tools.md)
+
+## Web
+
+* [Reconnaissance](web/reconnaissance/README.md)
+  * [Gobuster](web/reconnaissance/gobuster.md)
+* [SQLI](web/sqli.md)
 
 ## Theory
 

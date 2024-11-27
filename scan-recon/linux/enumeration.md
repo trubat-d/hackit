@@ -122,6 +122,20 @@ netstat -i
 #display timers 
 netstat -ano
 ```
+
+Show sockets
+
+```sh
+ss -tulpn
+```
+
+| Argument | Description                        |
+| -------- | ---------------------------------- |
+| -t       | Display TCP sockets                |
+| -u       | Display UDP sockets                |
+| -l       | Displays only listening sockets    |
+| -p       | Shows the process using the socket |
+| -n       | Doesn't resolve service names      |
 {% endtab %}
 
 {% tab title="File System" %}
@@ -206,4 +220,3 @@ mount -o rw <ip>:/<folder or remote> <folder on attacker machine>
   [https://github.com/diego-treitos/linux-smart-enumeration](https://github.com/diego-treitos/linux-smart-enumeration)
 * Linux Priv Checker: \
   [https://github.com/linted/linuxprivchecker](https://github.com/linted/linuxprivchecker)
-

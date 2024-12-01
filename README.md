@@ -9,3 +9,9 @@ description: >-
 Intro\
 Linux Basics\
 Etc....
+
+
+
+Red Team Toolkit Reference
+
+{% embed url="https://github.com/infosecn1nja/Red-Teaming-Toolkit#Payload%20Development" %}

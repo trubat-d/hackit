@@ -72,6 +72,8 @@
 * [Tools](network/tools/README.md)
   * [NMAP](network/tools/nmap.md)
   * [TCPdump](network/tools/tcpdump.md)
+  * [Openssl](network/tools/openssl.md)
+  * [Socat](network/tools/socat.md)
 * [Secure Protocols](network/secure-protocols/README.md)
   * [SSH](network/secure-protocols/ssh.md)
   * [SFTP and FTPS](network/secure-protocols/sftp-and-ftps.md)
@@ -91,10 +93,15 @@
   * [Gobuster](web/reconnaissance/gobuster.md)
 * [SQLI](web/sqli.md)
 
-## Theory
+## Defense
 
-* [Security Models](theory/security-models.md)
+* [IDS](defense/ids/README.md)
+  * [Snort](defense/ids/snort.md)
 
 ## References
 
 * [Glossary](references/glossary.md)
+
+## Theory
+
+* [Security Models](theory/security-models.md)

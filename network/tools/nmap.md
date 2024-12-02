@@ -40,8 +40,9 @@ Ways to specify targets:
 Limiting number of ports to scan
 
 * `-F` is the fast mode, which scans the 100 most common ports instead of default 1000
-* `-f` will fragment packets making them less likely to be detected by IDS or firewalls
+* `-f` will fragment packets making them less likely to be detected by IDS or firewalls (size fragemented to 8bytes)
 * `--mtu <num>` will be a multiple of 8 to fragment packets in size specific
+* `-g` - Use give source port
 * `--scan-delay <time>ms` will add a delay between packets sent
 * `--badsum` will generate invalid checksum packets
 * `-p <range>` allows to specify a range of ports to scan

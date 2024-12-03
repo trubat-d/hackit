@@ -35,6 +35,8 @@
   * [Shell Listeners](scan-recon/linux-shells/shell-listeners.md)
   * [Shell Payloads](scan-recon/linux-shells/shell-payloads.md)
   * [Web Shells](scan-recon/linux-shells/web-shells.md)
+* [Vulnerability scan](scan-recon/vulnerability-scan/README.md)
+  * [OpenVAS](scan-recon/vulnerability-scan/openvas.md)
 
 ## Exploitation
 
@@ -97,6 +99,9 @@
 
 * [IDS](defense/ids/README.md)
   * [Snort](defense/ids/snort.md)
+* [Linux Hardening](defense/linux-hardening.md)
+* [Network Hardening](defense/network-hardening.md)
+* [Windows Hardening](defense/windows-hardening.md)
 
 ## References
 

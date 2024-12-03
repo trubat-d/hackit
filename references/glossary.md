@@ -366,4 +366,583 @@ A web application firewall that protects web applications by filtering and monit
 
 **Whitelisting**
 
-The practice of defining permitted access as opposed to blocking prohibited access
+The practice of defining permitted access as opposed to blocking prohibited access\
+**Active Exploit**
+
+A type of exploit in which an attacker tries to alter data that has already arrived at a destination or data that is en route to a destination.
+
+**Active Reconnaissance**
+
+A type of reconnaissance in which a hacker directly interacts with the target to obtain information about it.
+
+**Anonymity**
+
+A condition in which no one knows who you are, but they might be able to figure out what you do.
+
+**Application Rootkit**
+
+A type of rootkit that replaces the computer’s regular files with rootkit files. It may also alter the functionality of regular programs.
+
+**Authorized Drive-by Attack**
+
+A type of attack that requires user interaction. The attack relies on a victim allowing a download without fully understanding its content.
+
+**Backdoor**
+
+A type of malware that enables an attacker to gain unauthorized access to a user’s systems.
+
+**Black-Hat Hacker**
+
+Hackers who attempt to obtain unauthorized access to computer systems to damage their operations or to steal confidential data. They are also referred to as “crackers”.
+
+**Blackbox Penetration Testing**
+
+A method in which the subject being tested is exposed to the Internet or a large number of unauthorized users. The only information provided to the penetration tester about the tested subject is its address/location/name.
+
+**Blind SQL Injection**
+
+An SQL attack type that relies on the response and behavioral patterns of the server.
+
+**Blue Team**
+
+A team that protects against real attackers and red teams. Blue teams create and implement preventive measures to improve an organization’s cybersecurity.
+
+**Boolean Operator**
+
+An operator that defines relationships between search terms.
+
+**Boolean SQL Injection**
+
+The attacker sends an SQL query to the database, prompting the application to return a result. Depending on whether the query is true or false, the information within the HTTP response will be modified or stay unchanged. The attacker can then determine if the message generated a true or false result.
+
+**Boot Loader**
+
+The first thing loaded and performed when a computer is turned on. It provides the user interface for loading an operating system and applications.
+
+**Bootloader Rootkit**
+
+A type of rootkit that infects a machine by replacing its authentic bootloader with one that has been compromised. This means that the rootkit is enabled prior to booting the computer.
+
+**Broken Access Control**
+
+A vulnerability that enables attackers to access user accounts, impersonate users or administrators, and give regular users unintended access to privileged functionalities.
+
+**Brute Force**
+
+A password attack technique that works by guessing probable password combinations until the actual password is uncovered.
+
+**Bug Bounties**
+
+A crowdsourcing program in which individuals are rewarded for detecting and reporting software problems.
+
+**Built-in Backdoor**
+
+A type of backdoor that is installed by hardware and software manufacturers as a consequence of the software development process.
+
+**Client Side**
+
+Refers to everything displayed or occurring on the client side of a web application (end user device).
+
+**Client-Side Vulnerability**
+
+A vulnerability that enables an attacker to attack an application’s users.
+
+**Computer Hacking**
+
+The act of illegally gaining access to a computer.
+
+**Computer Security Incident Response Team (CSIRT)**
+
+A team responsible for handling all technical aspects of a security incident.
+
+**Covering Tracks**
+
+A phase in which hackers attempt to hide their activity from defensive security tools and procedures after gaining access to a system. This is also commonly referred to as obfuscation.
+
+**Cross-Site Scripting**
+
+A type of attack that uses a client-side scripting language, such as JavaScript, to exploit vulnerabilities in web applications.
+
+**Crowdsourcing**
+
+The method of gathering information or assistance for a project or activity by garnering the support of a large group of individuals.
+
+**Cryptographic Failure**
+
+Also known as sensitive data exposure, this refers to the loss of protection for confidential data while in transit or at rest.
+
+**Cyber Kill Chain**
+
+A model that contains a series of steps that trace a cyber-attack from reconnaissance to actions performed by the attackers.
+
+**Cybersecurity Incident**
+
+A single or series of unwanted or unexpected cybersecurity events that are likely to compromise organizational operations. Cybersecurity incidents are defined as events that have a harmful impact.
+
+**Database**
+
+A data structure that stores organized information. Most databases contain multiple tables, which may each include several different fields.
+
+**Database Management System (DBMS)**
+
+A software program designed to store, fetch, modify, and manage data in a database. In large systems, a DBMS helps users and third-party software store and retrieve data.
+
+**Defacement Attack**
+
+An attack involves replacing the target’s webpage with the contents of a fake page for criminal motives.
+
+**Delivery**
+
+A phase in the Cyber Kill Chain in which hackers transfer the created weapon to the target.
+
+**DDL File**
+
+A type of file that contains instructions that other programs can rely on to perform specific tasks. DLL files are utilized to accomplish certain functions (such as printing a document).
+
+**DOM Based XSS**
+
+An attack that exploits DOM to create, alter, and destroy document objects. In a DOM-based XSS attack, malicious script affects browser behavior without affecting the HTTP response.
+
+**Drive-by Attack**
+
+Also known as a drive-by download attack. An attack in which a malicious script is downloaded and installed on a device without the user’s knowledge, exposing it to a cyber-attack.
+
+**Dynamic Web Page**
+
+A web page that displays different content unique to every user who accesses it.
+
+**Email Hacking**
+
+The act of gaining unauthorized access to a personal email account and using it without the owner’s permission to send spam links or threats and engage in other potentially harmful activities.
+
+**Email Phishing**
+
+A type of phishing attack in which attackers claim to be a genuine source or organization to entice victims to open or download a malicious file or link via email.
+
+**ENISA Framework**
+
+A framework established by the European Union Agency for Network and Information Security (ENISA). This framework contains a summary of important content found in risk management literature.
+
+**Equifax Breach**
+
+A data breach that compromised the personal information of around 147 million customers and employees.
+
+**Error-Based SQLi**
+
+An SQL attack type in which an attacker causes error messages to be generated by the database.
+
+**Ethical Hacking**
+
+The process of detecting security vulnerabilities, bugs, misconfigurations, etc., to understand and remediate them before attackers uncover them. This is also commonly referred to as penetration testing.
+
+**Exploit**
+
+A program, software, piece of data, or command that manipulates a system or computer bug to cause undesirable or unexpected behavior. An exploit is not the malicious program itself, but rather the method cybercriminals employ to deliver it.
+
+**Exploitation**
+
+A step in which the hacker uses various techniques to gain access to illegal resources, such as access to the targeted system.
+
+**Google Hacking/Google Dorking**
+
+A data-gathering technique in which an attacker uses advanced Google searching processes to acquire information.
+
+**Gray Box Penetration Testing**
+
+A method in which a penetration tester is given limited information and credentials about the subject being tested.
+
+**Grey-Hat Hacker**
+
+A hacker who does not fit into either the black hat or white hat hacker categories and who typically carries out penetration testing on networks without the owner’s consent. While not necessarily malicious, this is still illegal.
+
+**Hacker**
+
+A person who uses a computer to gain unauthorized access to information systems.
+
+**Hardware Supply Chain Attack**
+
+A type of supply chain attack that involves compromising physical components to infect all users who use the components. To maximize their reach and impact, hackers will usually target a device travelling through the whole supply chain.
+
+**HTML Attributes**
+
+These attributes supply additional information about an element and are placed inside the opening tag. An attribute consists of two fields: The name and the value.
+
+**HTML Tag**
+
+A tag used to indicate the beginning of an HTML element and is often accompanied by angle brackets.
+
+**Hypertext**
+
+A text containing hypertext links to other texts.
+
+**Incident Analysis**
+
+An act carried out by analysts whereby they investigate incident impacts and activities on affected systems to discover what occurred and what can be done to eliminate the incident.
+
+**Incident Containment**
+
+Actions carried out by analysts to prevent an incident from overwhelming additional resources or from creating more significant damage.
+
+**Incident Detection**
+
+Actions carried out by analysts to detect and collect data from IT systems, security technologies, and publicly available data, as well as to detect attack precursors and indicators.
+
+**Incident Eradication and Recovery**
+
+Actions carried out by analysts to remove all incident-related artifacts from the network.
+
+**Incident Preparation**
+
+Tasks that are carried out by analysts in which they construct a profile of IT assets, such as networks, computers, and devices. This helps them determine which types of security incidents should be examined and assists them in developing complete response plans.
+
+**Incident Response (IR)**
+
+A collection of information security rules and procedures implemented by an organization to detect, contain, and remove cyber-attacks.
+
+**Injection Vulnerability**
+
+A vulnerability that occurs when a program receives untrusted data as part of a query or command.
+
+**Insecure Design**
+
+A vulnerability caused by designs with missing or inadequate controls and mechanisms.
+
+**Installation**
+
+A phase in the Cyber Kill Chain in which an infection creates a point of entry for hackers.
+
+**ISACA Framework**
+
+A framework that is designed to aid managers in bridging the crucial gap between technical obstacles, business risks, and control requirements.
+
+**ISO/IEC Framework**
+
+A framework that covers the essential ideas and processes of information security incident management and combines them with guiding principles to identify, report, analyze, and react to incidents as well as apply lessons learned.
+
+**JavaScript**
+
+A programming language used to generate dynamic and interactive web content, such as browsers and applications.
+
+\*\*John The Ripper \*\*
+
+A password cracking tool which attempts all possible password combinations using a password dictionary.
+
+**Lightweight Directory Access Protocol (LDAP)**
+
+A protocol that allows programs to quickly access user information. It is a simple client-server protocol used to access directory services.
+
+**Locker Ransomware**
+
+A ransomware type that prevents fundamental computer operations from functioning.
+
+**Maintaining Access**
+
+A phase in the Cyber Kill Chain in which a hacker has gained access to a target system and wants to preserve that access for future usage.
+
+**Malware Backdoor**
+
+A type of backdoor that functions as a back door for malware. In order to gain access to the target system, hackers can hide a backdoor within a program that is disguised as something harmless.
+
+**Man-in-the-middle Attack**
+
+An attack in which an attacker intercepts and forwards messages between two parties without the knowledge of either party. At the same time, both sides think they are communicating directly and securely with each other.
+
+**Markup Language**
+
+A computer language designed to impose guidelines for text layout and formatting.
+
+**Memory Rootkit**
+
+A type of rootkit that conceals itself in a computer’s random-access memory (RAM) and utilizes its resources to perform malicious actions in the background.
+
+**Metasploit (msfconsole)**
+
+A program which has preloaded exploits that can be used to attack a system. Msfconsole is a centralized console that enables quick access to all of Metasploit’s features.
+
+**Meterpreter**
+
+A sort of Metasploit payload that enables an attacker to take control of a victim’s computer by executing a remote hidden shell and creating a channel directly to the attacker’s system.
+
+**Multi-Factor Authentication (MFA)**
+
+An authentication mechanism that requires users to provide two or more authentication factors to access a resource.
+
+**National Institute of Standards and Technology (NIST)**
+
+A US government agency that provides technology-focused guidelines. They specify which security measures should be in place to ensure data safety.
+
+**Network Hacking**
+
+The act of collecting information about a network using tools with the intention of harming or interfering with the network system’s service.
+
+**Network Sniffer**
+
+An application that listens to network traffic received by a network card.
+
+**Null**
+
+A special marker that indicates that a data value does not exist in the database.
+
+**Obtaining Access**
+
+The phase in which the hacker actually penetrates the target system or network.
+
+**Open Source Intelligence (OSINT)**
+
+A process in which an individual collects information from the Internet and other public sources. This process involves sifting through large amounts of data to find useful information.
+
+**Open Web Application Security Project (OWASP)**
+
+An organization that lists the ten most critical web application vulnerabilities/security risks. The list is updated every three to four years.
+
+**Operating System (OS)**
+
+A system that controls hardware and software components and provides basic functionalities for computer programs.
+
+**OSINT Framework**
+
+A framework that provides access to a vast assortment of resources for various tasks, such as email addresses and social media account exploration.
+
+**Passive Exploit**
+
+A process whereby a hacker waits for hosts to connect before exploiting them.
+
+**Passive Reconnaissance**
+
+A type of reconnaissance in which a hacker attempts to gather information about the target without interacting with it.
+
+**Payload**
+
+Malicious content that malware carries.
+
+**Payment Card Industry (PCI)**
+
+Technical and operational standards that businesses follow to secure and protect credit card data provided by cardholders and transmitted through card processing transactions.
+
+**Payment Card Industry Data Security (PCI DSS)**
+
+A group of security standards established in 2004 that outline a compliance scheme that protects credit and debit card transactions from data theft and fraud.
+
+**Penetration Testing (PT)**
+
+This technique employs hacking methods to identify risks from the perspective of a potential attacker. It is performed to simulate scenarios in which attackers attempt to access sensitive resources or impact the quality of services.
+
+**Persistence/Foothold**
+
+A tactic where malware or other types of malicious exploits bypass the defenses running on a system. Sometimes, these exploits can develop a foothold that allows them to continue running even after a reboot or when the user logs out.
+
+**Post-Incident Activity**
+
+Any actions taken by analysts to learn from prior incidents and apply the knowledge gained to improve incident response strategies, plans, and processes.
+
+**Proof of Concept (POC)**
+
+An activity that determines if an idea can be realized. An attacker can use a POC to test website vulnerabilities.
+
+**Proxy Server**
+
+A server that connects users to the Internet (or any other network) and keeps the user’s IP address confidential. Any Internet request users make goes via the proxy server, which makes the queries for them.
+
+**Purple Team**
+
+A team that combines red and blue tactics. The purple team’s cybersecurity skills and effectiveness improve due to this combination.
+
+**Python**
+
+A programming language that can be used on multiple operating systems, including Windows, Linux, and Unix-based OS.
+
+**Quality Assurance (QA)**
+
+The process of systematically determining whether a product or service fits specific criteria.
+
+**Random-access memory (RAM)**
+
+The computer’s short-term memory. Once the operating system is loaded, RAM goes into action. Once the power is turned off, any data it contains is lost.
+
+**Ransomware**
+
+A type of malware designed to prevent users or organizations from accessing files on their devices by encrypting the files and demanding a ransom for the decryption key.
+
+**Reconnaissance**
+
+The process of identifying and gathering information about a system.
+
+**Red Team**
+
+A team of ethical hackers hired to find security flaws in an organization’s defenses. They use hacking skills to find vulnerabilities in a company’s systems, personnel, or procedures.
+
+**Reflected XSS Attack**
+
+An XSS type in which the injected script is reflected off the web server, such as in an error message, search result, or any other response that contains some or all of the request’s input. Reflected attacks are delivered to victims via a different channel, such as an email or a different website.
+
+**Rootkit**
+
+A computer program that allows hackers to maintain access and control over a targeted system.
+
+**Security Logging and Monitoring Failure**
+
+A vulnerability in an application’s ability to recognize and react to security threats.
+
+**Security Misconfiguration**
+
+A vulnerability that takes advantage of security measures that have been incorrectly configured or that have been left vulnerable, exposing systems and data to risk.
+
+**Server Side**
+
+Refers to everything that occurs on the server, as opposed to the client side (end user device).
+
+**Server-Side Request Forgery (SSRF)**
+
+A web vulnerability that enables hackers to cause a server-side program to send HTTP requests to arbitrary domains.
+
+**Server-Side Vulnerability**
+
+A vulnerability that enables an attacker to attack the server/service hosting the web application.
+
+**Session Hijacking**
+
+Occurs when an attacker creates a malicious payload that sends a victim’s cookie back to the attacker. This can allow the attacker to use the cookie to impersonate the victim online.
+
+**Shellcode**
+
+A tiny code used to exploit a vulnerability. Shellcode refers to code that begins a command shell, such as cmd, via which an attacker may control a compromised machine.
+
+**Single Payload**
+
+A self-contained and entirely independent payload.
+
+**SMB Protocol**
+
+A network protocol that allows users to connect with various computers and servers to access their resources and distribute, open, and modify files.
+
+**Social Engineering Attack**
+
+Psychological manipulation to mislead users into committing security mistakes to gain unauthorized access to systems, networks, physical locations, or for financial gain.
+
+**Software and Data Integrity Failure**
+
+A vulnerability that involves code and infrastructure that are vulnerable to integrity violations, such as a program that uses untrusted plugins, libraries, or extensions.
+
+**Software Supply Chain Attack**
+
+A type of supply chain attack that involves the injection of malicious code into an application to infect all app users. Hackers frequently target a software’s source code, injecting malicious malware into a legitimate app or software.
+
+**Spear Phishing**
+
+A type of phishing attack categorized by an attacker targeting particular people or organizations prior to carrying out an attack.
+
+**SQL**
+
+A standardized programming language for accessing and manipulating databases to create user-specific representations of data.
+
+**SQL Database**
+
+A collection of highly structured tables in which each row represents a data entity and each column specifies a certain information field.
+
+**SQL Injection**
+
+A web security vulnerability that allows attackers to interrupt an application’s database queries.
+
+**SQL Queries**
+
+End-user transactions are typically requests for data from a single table or a collection of tables. A query can offer a simple answer, perform computations, integrate data from various tables, and add, change, or delete data from a database.
+
+**Staged Payload**
+
+A payload that is as tiny as possible and whose primary purpose is to allow attackers to upload larger payloads.
+
+**Static Web Page**
+
+A web page containing HTML-based content that is mainly static. To make changes to the page’s content or elements, the developer must do so manually.
+
+**Stored XSS Attack**
+
+A type of XSS attack in which the injected script is stored permanently on the target servers. The victim retrieves the malicious script from the server when requesting the stored data.
+
+**String**
+
+Character sequences in a program (letters, numbers, or others). A program usually contains a string if it performs functions, such as printing a message, connecting to a URL, or copying a file to a specific location.
+
+**Supply Chain Attack**
+
+An attack designed to abuse the trust between an organization and its external stakeholders.
+
+**Sysadmin, Audit, Network, and Security (SANS) Framework**
+
+A framework which describes the six processes involved in treating an incident properly: Preparation, Identification, Containment, Elimination, Recovery, and Lessons Learned.
+
+**System Misconfiguration**
+
+A security measure that was incorrectly configured or that was left vulnerable, thereby putting the systems and the data at risk.
+
+**Threat Prevention**
+
+Any measures used to prevent the operations of cybercriminals. These protections rely on network architecture components, such as firewalls and anti-virus software.
+
+**Time-Based SQL Injection**
+
+A response-time attack. An attacker sends an SQL query and the database responds. When the database responds, the attacker knows if the query worked. An attacker can tell if a message returned true or false without using database data.
+
+**Uber Hack**
+
+An attack that targeted Uber in 2022 via social engineering. According to Uber, no customer data was compromised, and all services were restored.
+
+**Unauthorized Drive-by Attack**
+
+A type of drive-by attack that does not require user interaction and it infects the device without indication or notification. It operates the same as an authorized type, but it is a fully automated procedure.
+
+**Uniform Resource Locator (URL)**
+
+A sequence of characters pointing to an address. It is a popular method for locating resources on the Internet.
+
+**Union-Based SQLi Attack**
+
+A type of SQL attack that takes advantage of the UNION SQL operator which combines multiple statements generated by the database to obtain a single HTTP response.
+
+**Virtual Private Network (VPN)**
+
+Technology used to securely connect two private networks via an encrypted connection.
+
+**Vulnerability**
+
+A device, software, or human weakness involving a cyber asset that an attacker can exploit to perform malicious activities.
+
+**Vulnerable and Outdated Component**
+
+A component which the vendor no longer offers security updates or patches for. This leaves it open to attack.
+
+**Weaponization**
+
+A step in the hacking process whereby hackers create a digital weapon (malware), such as a trojan or ransomware, by manipulating the target’s vulnerabilities.
+
+**Web Application**
+
+Software that runs on a web server rather than on a device’s operating system. Users access web applications through a web browser.
+
+**Web Hacking**
+
+The act of obtaining unauthorized access to a web server and its associated applications, such as servers and other interfaces.
+
+**Web Page**
+
+A document written in HTML and displayed by a web browser. Web pages can be static or dynamic.
+
+**Website**
+
+A collection of web pages and related content that is identified by a common domain name and published on at least one web server.
+
+**White-Hat Hacker**
+
+These hackers are hired by organizations to identify vulnerabilities in a computer or network system. They are commonly referred to as ethical hackers.
+
+**Whitebox Penetration Testing**
+
+A method in which the penetration tester is given complete access to the tested subject’s source code, network architecture, and administrative access to security controls.
+
+**Whitelisting**
+
+The practice of allowing certain rules and prohibiting all others.
+
+**Zombie System**
+
+A compromised system that is under the hacker’s control.

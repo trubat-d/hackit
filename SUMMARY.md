@@ -88,6 +88,7 @@
 
 ## OSINT
 
+* [Website Content Discovery](osint/website-content-discovery.md)
 * [Tools](osint/tools.md)
 
 ## Web

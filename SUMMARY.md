@@ -7,6 +7,7 @@
 * [Digital Forensics](forensics/digital-forensics/README.md)
   * [Volatility](forensics/digital-forensics/volatility.md)
 * [Windows](forensics/windows/README.md)
+  * [FlareVM](forensics/windows/flarevm.md)
   * [Powershell](forensics/windows/powershell.md)
   * [CMD.exe](forensics/windows/cmd.exe.md)
   * [Regedit](forensics/windows/regedit.md)
@@ -102,6 +103,11 @@
 * [Linux Hardening](defense/linux-hardening.md)
 * [Network Hardening](defense/network-hardening.md)
 * [Windows Hardening](defense/windows-hardening.md)
+* [Active Directory Hardening](defense/active-directory-hardening.md)
+
+## Risk Management
+
+* [Calculation](risk-management/calculation.md)
 
 ## References
 

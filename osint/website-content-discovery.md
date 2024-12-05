@@ -29,3 +29,8 @@ description: Try to find what a website hides
 * S3 buckets from amazon - try links and common terms such as \<NAME>-assets, \<NAME>-www, \<NAME>-public, \<NAME>-private, etc on a link like \
   http(s)://**{name}.s3.amazonaws.com**
 * Automated Discovery using tools like ffuf, dirb or gobuster
+
+{% content-ref url="../scan-recon/web-reconnaissance/gobuster.md" %}
+[gobuster.md](../scan-recon/web-reconnaissance/gobuster.md)
+{% endcontent-ref %}
+

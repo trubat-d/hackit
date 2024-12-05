@@ -38,6 +38,10 @@
   * [Web Shells](scan-recon/linux-shells/web-shells.md)
 * [Vulnerability scan](scan-recon/vulnerability-scan/README.md)
   * [OpenVAS](scan-recon/vulnerability-scan/openvas.md)
+* [Web Reconnaissance](scan-recon/web-reconnaissance/README.md)
+  * [Sub-domain enumeration](scan-recon/web-reconnaissance/sub-domain-enumeration.md)
+  * [Gobuster](scan-recon/web-reconnaissance/gobuster.md)
+  * [SQLI detection](scan-recon/web-reconnaissance/sqli-detection.md)
 
 ## Exploitation
 
@@ -90,12 +94,6 @@
 
 * [Website Content Discovery](osint/website-content-discovery.md)
 * [Tools](osint/tools.md)
-
-## Web
-
-* [Reconnaissance](web/reconnaissance/README.md)
-  * [Gobuster](web/reconnaissance/gobuster.md)
-* [SQLI](web/sqli.md)
 
 ## Defense
 

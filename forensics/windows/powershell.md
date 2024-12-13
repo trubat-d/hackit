@@ -114,6 +114,7 @@ Where-Object -Property <PROPERTY> -<eq/gt/ge/lt/le> "<VALUE>"
 
 #With pattern Matching
 Where-Object -Property <PROPERTY> -like "<PATTERN>"
+Where-Object -Property <PROPERTY> -match "<PATTERN>"
 ```
 
 {% hint style="info" %}

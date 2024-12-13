@@ -53,7 +53,7 @@ Requires internet connection
 List Directory
 
 ```powershell
-Get-ChildItem (-Path <PATH>)
+Get-ChildItem (-Path <PATH>) -Recurse
 dir
 ls
 ```
@@ -187,6 +187,30 @@ Get the hash of a file
 
 ```powershell
 Get-FileHash -Path <PATH> (-Algorithm <ALGO>)
+```
+
+List patches installed
+
+```powershell
+Get-Hotfix
+```
+
+List Backup files
+
+```powershell
+Get-ChildItem -Path 'C:\' -Filter '*.bak*' -Recurse
+```
+
+Search for files with specific strings
+
+```powershell
+Select-String -Path "C:\Path\To\Directory\*" -Pattern "yourKeyword"
+```
+
+List API keys
+
+```powershell
+Get-ChildItem -Path 'C:\'  -Recurse | Select-String -Pattern "API_KEY" 
 ```
 
 

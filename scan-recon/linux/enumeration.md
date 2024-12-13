@@ -205,6 +205,12 @@ Mount a share
 mount -o rw <ip>:/<folder or remote> <folder on attacker machine>
 ```
 
+Scan for password in files
+
+```sh
+grep --color=auto -rnw '/' -ie "Password" --color=always 2>/dev/null
+```
+
 
 {% endtab %}
 {% endtabs %}

@@ -6,6 +6,7 @@
 
 * [Digital Forensics](forensics/digital-forensics/README.md)
   * [Volatility](forensics/digital-forensics/volatility.md)
+  * [Phishing tool](forensics/digital-forensics/phishing-tool.md)
 * [Windows](forensics/windows/README.md)
   * [FlareVM](forensics/windows/flarevm.md)
   * [Powershell](forensics/windows/powershell.md)
@@ -39,9 +40,11 @@
 * [Vulnerability scan](scan-recon/vulnerability-scan/README.md)
   * [OpenVAS](scan-recon/vulnerability-scan/openvas.md)
 * [Web Reconnaissance](scan-recon/web-reconnaissance/README.md)
+  * [Domain Name](scan-recon/web-reconnaissance/domain-name.md)
   * [Sub-domain enumeration](scan-recon/web-reconnaissance/sub-domain-enumeration.md)
   * [Gobuster](scan-recon/web-reconnaissance/gobuster.md)
   * [SQLI detection](scan-recon/web-reconnaissance/sqli-detection.md)
+  * [IOT with Shodan](scan-recon/web-reconnaissance/iot-with-shodan.md)
 
 ## Exploitation
 
@@ -104,14 +107,12 @@
 * [Windows Hardening](defense/windows-hardening.md)
 * [Active Directory Hardening](defense/active-directory-hardening.md)
 
-## Risk Management
-
-* [Calculation](risk-management/calculation.md)
-
 ## References
 
 * [Glossary](references/glossary.md)
 
 ## Theory
 
+* [Cyber Threat Intelligence](theory/cyber-threat-intelligence.md)
 * [Security Models](theory/security-models.md)
+* [Risk Management Calculation](theory/risk-management-calculation.md)

@@ -28,7 +28,7 @@ This technology is particularly useful in large organizations or educational ins
   * Subnets function at Layer 3 of the OSI model
 * Complementary benefits: Enhance network segmentation and management
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 #### Subnets, IP Addresses, Masks, and CIDR
 
@@ -46,4 +46,4 @@ How they work together:
 
 Example: A subnet with mask 255.255.255.0 (or /24 in CIDR) applied to the IP 192.168.1.0 creates a network with addresses ranging from 192.168.1.1 to 192.168.1.254, with 192.168.1.0 as the network address and 192.168.1.255 as the broadcast address.
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>

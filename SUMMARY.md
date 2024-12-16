@@ -79,8 +79,15 @@
 
 ## Network
 
-* [What is a network ?](network/what-is-a-network.md)
-* [VLANs](network/vlans.md)
+* [Theory](network/theory/README.md)
+  * [What is a network ?](network/theory/what-is-a-network.md)
+  * [Packets and Frames](network/theory/packets-and-frames.md)
+  * [VLANs](network/theory/vlans.md)
+  * [OSI Model](network/theory/osi-model.md)
+  * [TCP/IP Model](network/theory/tcp-ip-model.md)
+  * [DNS Search Process](network/theory/dns-search-process.md)
+  * [Traffic Monitoring](network/theory/traffic-monitoring.md)
+  * [IP Subnetting and interfaces](network/theory/ip-subnetting-and-interfaces.md)
 * [Tools](network/tools/README.md)
   * [NMAP](network/tools/nmap.md)
   * [TCPdump](network/tools/tcpdump.md)

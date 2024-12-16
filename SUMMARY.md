@@ -79,6 +79,8 @@
 
 ## Network
 
+* [What is a network ?](network/what-is-a-network.md)
+* [VLANs](network/vlans.md)
 * [Tools](network/tools/README.md)
   * [NMAP](network/tools/nmap.md)
   * [TCPdump](network/tools/tcpdump.md)

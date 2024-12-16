@@ -91,6 +91,48 @@ type
 cat
 ```
 
+Convert from Base64
+
+```powershell
+[System.Text.Encoding]::Unicode.GetString([System.Convert]::FromBase64String($EncodedText))
+```
+
+Get hash
+
+```powershell
+Get-FileHash -Algorithm <ALG>
+```
+
+Download a file from a web server
+
+```powershell
+Invoke-WebRequest <URLonServer> -OutFile <fileOnLocal>
+#OR
+(New-Object System.Net.WebClient).Downloadfile(<URLonServer>,<fileOnLocal>)
+```
+
+Get the execution policy
+
+```powershell
+Get-ExecutionPolicy
+```
+
+can be bypassed spawning powershell with
+
+```powershell
+#if not already in powershell
+powershell -ExecutionPolicy Bypass
+
+#if already in powershell
+Set-ExecutionPolicy Bypass
+```
+
+Save Output to a file
+
+```powershell
+Out-File <filename>
+```
+
 
 {% endtab %}
 
@@ -129,7 +171,7 @@ Select-Object <PROPERTY1,PROPERTY2>
 
 Filter by string (alias to grep or findstr)
 
-```
+```powershell
 Select-String -Path <PATH> -Pattern "<PATTERN>"
 findstr
 ```
@@ -138,7 +180,17 @@ findstr
 It supports regex
 {% endhint %}
 
+Show in a table format
 
+```powershell
+Format-Table <properties>
+```
+
+Show in a list
+
+```powershell
+Format-List
+```
 {% endtab %}
 
 {% tab title="System and Network" %}
@@ -169,7 +221,13 @@ Get-NetIPAddress
 Detailed view of all currently running processes including CPU and memory usage
 
 ```powershell
-Get-Process
+Get-Process (-name)
+```
+
+Start a specific Process
+
+```powershell
+Start-Process
 ```
 
 Retrieve information about the status of services on the machines
@@ -208,13 +266,23 @@ Search for files with specific strings
 Select-String -Path "C:\Path\To\Directory\*" -Pattern "yourKeyword"
 ```
 
-List API keys
+List Files containing a specific keyword
 
 ```powershell
-Get-ChildItem -Path 'C:\'  -Recurse | Select-String -Pattern "API_KEY" 
+Get-ChildItem -Path 'C:\'  -Recurse | Select-String -Pattern "keyword" 
 ```
 
+This can be used to ping a range of ips
 
+```powershell
+<NUM>..<NUM> | %{echo "10.0.2.$_"; ping -n 1 10.0.2.$_ | Select-String ttl} 
+```
+
+Get the Owner of folder
+
+```powershell
+Get-Acl <file>
+```
 {% endtab %}
 
 {% tab title="Scripting" %}
@@ -226,7 +294,85 @@ Invoke-Command
 Get-Help Invoke-Command -examples
 ```
 
+### PowerView
+
+Import the powerview.ps1 module
+
+```powershell
+Import-Module powerview.ps1
+```
+
+Collect infos about domain controller
+
+```powershell
+Get-NetDomainController
+```
+
+Get a list of domain Users
+
+```powershell
+Get-NetUser
+
+(Get-NetUser).name
+```
+
+{% hint style="info" %}
+You might consider output to .csv or out-gridview
+{% endhint %}
+
+you can also list for specific property
+
+```powershell
+Get-NetUser | select -ExpandProperty <protery>
+#OR
+Get-NetUser | select -ExpandProperty <lastlogon>
+```
+
+Enumerate systems connected to the domain
+
+```powershell
+Get-NetComputer -ping
+```
+
+List groups for domain
+
+```powershell
+Get-NetGroup
+```
+
+Enumerate members of a group
+
+```powershell
+Get-NetGroupMember "Domain Admins"
+```
+
+Find shares
+
+```powershell
+Find-DomainShare
+
+#List readable Shares
+Find-DomainShare -CheckShareAccess
+```
+
+Enumerate Group Policy
+
+```powershell
+Get-NetGPO
+```
+
+User enumeration
+
+```powershell
+Find-LocalAdminAccess
+```
+
+Disabled users in domain admins
+
+```powershell
+Get-NetUser -Filter "(userAccountControl:1.2.840.113556.1.4.803:=2)"
+```
+
 
 {% endtab %}
 {% endtabs %}
-

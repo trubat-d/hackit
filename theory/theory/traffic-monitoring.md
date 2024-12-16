@@ -64,7 +64,7 @@
 
 * Intrusion Detection and Prevention (IDS/IPS), Data loss Prevention (DLP), Endpoint Protection, Cloud Security, Security Information and Event Management (SIEM), Security Orchestration Automation (SOAR), Network Traffic Analysis & Network Detection and Response
 
-<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
 ### Management
 

@@ -23,6 +23,7 @@
 
 ## Scan/Recon
 
+* [Windows AD](scan-recon/windows-ad.md)
 * [Linux](scan-recon/linux/README.md)
   * [Enumeration](scan-recon/linux/enumeration.md)
   * [Kernel Exploit](scan-recon/linux/kernel-exploit.md)
@@ -113,9 +114,15 @@
 
 ## Theory
 
+* [Cryptopgraphy](theory/cryptopgraphy.md)
 * [Cyber Threat Intelligence](theory/cyber-threat-intelligence.md)
 * [Security Models](theory/security-models.md)
 * [Risk Management Calculation](theory/risk-management-calculation.md)
+* [CIA Triad, DID and Principles](theory/cia-triad-did-and-principles.md)
+* [Cyber defense objectives](theory/cyber-defense-objectives.md)
+* [Firewall, Anti-virus, IDS, IPS, DLP, SIEM, EDR and DMZ](theory/firewall-anti-virus-ids-ips-dlp-siem-edr-and-dmz.md)
+* [DFIR process](theory/dfir-process.md)
+* [Access Control, Authentication](theory/access-control-authentication.md)
 * [Theory](theory/theory/README.md)
   * [What is a network ?](theory/theory/what-is-a-network.md)
   * [Packets and Frames](theory/theory/packets-and-frames.md)
@@ -126,4 +133,5 @@
   * [Traffic Monitoring](theory/theory/traffic-monitoring.md)
   * [Telecom - Media and Switching](theory/theory/telecom-media-and-switching.md)
   * [IP Subnetting and interfaces](theory/theory/ip-subnetting-and-interfaces.md)
-* [System Administrator](theory/system-administrator.md)
+* [SQLi, DS, DDoS, XSS, CMDi](theory/sqli-ds-ddos-xss-cmdi.md)
+* [Sysadmin, Virtualization](theory/sysadmin-virtualization.md)

@@ -49,7 +49,7 @@ description: Aggregate of Linux Tools for Forensics
 
 
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -79,3 +79,16 @@ description: Aggregate of Linux Tools for Forensics
 5. **User ID Info**: The comment field. It allow you to add extra information about the users such as user’s full name, phone number etc. This field use by finger command.
 6. **Home directory**: The absolute path to the directory the user will be in when they log in. If this directory does not exists then users directory becomes /
 7. **Command/shell**: The absolute path of a command or shell (/bin/bash). Typically, this is a shell. Please note that it does not have to be a shell.
+
+### Most importants Files(/var/log):
+
+* Auth.log - Authentication, connections
+* Messages - logs common to the device
+* Daemon.log - Events related to Linux processes
+* Dpkg.log - Events of package managers when installing / upgrading / removing packages
+* Kern.log - events logged by the kernel
+* Mail.log - I wont explain this one cause its obvious
+
+Syslogs:
+
+* Rsyslog, Syslog-ng, Beats, Fluentd: Rsyslog server

@@ -170,3 +170,10 @@ NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.pdf
 Replace extension with the one you are interested in
 
 <figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+* Amcache Hive - save info on programs recently run on system - **`C:\\Windows\\AppCompat\\Programs\\Amcache.hve`**
+*   NTUSER.DAT - infos about user profile directory
+
+    `C:\\Users\\<username>\\`
+* Logs for chantges in Registry Hives - `C:\\Windows\\System32\\Config` files as `.LOG` extension
+* Backups of hives are made every 10 days - `C:\\Windows\\System32\\Config\\RegBack`

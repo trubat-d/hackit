@@ -127,7 +127,7 @@ Dynamic VLAN:
 * A metric called "hops" counts the number of routers a packet passes through across the network.
 * Routing occurs either statically (manually configured) or dynamically (automatically learned through routing protocols).
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Types of Routing
 

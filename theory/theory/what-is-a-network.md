@@ -101,6 +101,16 @@ to more advanced ones:
 * Check for malware and Viruses protection
 * Examine the logs of network activity
 
+### Network troubleshooting steps
+
+* Check for network Issues
+* Install hardware and apps
+* Tracks and improve network efficiency
+* Planning of the growth of the network
+* Managing Documentation for network
+* Ensure compliance with the policies and legal regulations
+* Secure network against threats
+
 ## Local Area Network (LAN) Topologies, Subnetting, ARP, and DHCP
 
 ### 1. LAN Topologies

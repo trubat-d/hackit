@@ -99,6 +99,10 @@
 * [Website Content Discovery](osint/website-content-discovery.md)
 * [Tools](osint/tools.md)
 
+## Cloud
+
+* [Azure](cloud/azure.md)
+
 ## Defense
 
 * [IDS](defense/ids/README.md)

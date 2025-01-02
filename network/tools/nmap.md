@@ -39,6 +39,8 @@ Ways to specify targets:
 {% tab title="Utilities" %}
 Limiting number of ports to scan
 
+* `-iL  makes it possible to use a list of hosts in a file or a list`
+* `-sL` will give a list of hosts nmap will scan without actually scanning them&#x20;
 * `-F` is the fast mode, which scans the 100 most common ports instead of default 1000
 * `-f` will fragment packets making them less likely to be detected by IDS or firewalls (size fragemented to 8bytes)
 * `--mtu <num>` will be a multiple of 8 to fragment packets in size specific

@@ -21,7 +21,7 @@
 * Used in day-to-day scenarios where big chunks of data need to be encrypted
 * Examples: AES-128/192/256 (Advanced Encryption Standard), Blowfish, Twofish, cast5
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 ### Asymmetric
 

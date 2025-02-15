@@ -169,7 +169,7 @@ NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.pdf
 
 Replace extension with the one you are interested in
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Amcache Hive - save info on programs recently run on system - **`C:\\Windows\\AppCompat\\Programs\\Amcache.hve`**
 *   NTUSER.DAT - infos about user profile directory

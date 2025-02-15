@@ -112,6 +112,10 @@
 * [Windows Hardening](defense/windows-hardening.md)
 * [Active Directory Hardening](defense/active-directory-hardening.md)
 
+## Reverse
+
+* [Data Extraction](reverse/data-extraction.md)
+
 ## References
 
 * [Glossary](references/glossary.md)

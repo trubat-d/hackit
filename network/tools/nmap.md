@@ -26,6 +26,7 @@ Ways to specify targets:
 - `-PS <portlist>` does a TCP syn scan
 - `-PA <portlist>` does a TCP ACK scan
 - `-PU <portlist>` does a UDP scan
+- `-PR` does only an ARP scan and no more
 - `-sL` will list the target that will be scaned in the case of more than 1 target
 - `-sT` does a connect scan, it tries to complete TCP three-way handshake with every port
 - `-sS` does a SYN scan, it only does the first step of TCP handshake which is stealthier

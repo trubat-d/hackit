@@ -30,7 +30,7 @@ description: Try to find what a website hides
   http(s)://**{name}.s3.amazonaws.com**
 * Automated Discovery using tools like ffuf, dirb or gobuster
 
-{% content-ref url="../scan-recon/web-reconnaissance/gobuster.md" %}
-[gobuster.md](../scan-recon/web-reconnaissance/gobuster.md)
+{% content-ref url="../web/web-reconnaissance/gobuster.md" %}
+[gobuster.md](../web/web-reconnaissance/gobuster.md)
 {% endcontent-ref %}
 

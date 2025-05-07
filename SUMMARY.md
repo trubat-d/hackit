@@ -21,6 +21,16 @@
   * [Registry Editor](forensics/windows/registry-editor.md)
 * [Linux](forensics/linux.md)
 
+## WEB
+
+* [Click Jacking](web/click-jacking.md)
+* [Web Reconnaissance](web/web-reconnaissance/README.md)
+  * [Domain Name](web/web-reconnaissance/domain-name.md)
+  * [Sub-domain enumeration](web/web-reconnaissance/sub-domain-enumeration.md)
+  * [Gobuster](web/web-reconnaissance/gobuster.md)
+  * [SQLI detection](web/web-reconnaissance/sqli-detection.md)
+  * [IOT with Shodan](web/web-reconnaissance/iot-with-shodan.md)
+
 ## Scan/Recon
 
 * [Windows AD](scan-recon/windows-ad.md)
@@ -40,12 +50,6 @@
   * [Web Shells](scan-recon/linux-shells/web-shells.md)
 * [Vulnerability scan](scan-recon/vulnerability-scan/README.md)
   * [OpenVAS](scan-recon/vulnerability-scan/openvas.md)
-* [Web Reconnaissance](scan-recon/web-reconnaissance/README.md)
-  * [Domain Name](scan-recon/web-reconnaissance/domain-name.md)
-  * [Sub-domain enumeration](scan-recon/web-reconnaissance/sub-domain-enumeration.md)
-  * [Gobuster](scan-recon/web-reconnaissance/gobuster.md)
-  * [SQLI detection](scan-recon/web-reconnaissance/sqli-detection.md)
-  * [IOT with Shodan](scan-recon/web-reconnaissance/iot-with-shodan.md)
 
 ## Exploitation
 

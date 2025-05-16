@@ -23,6 +23,9 @@
 
 ## WEB
 
+* [HTML Tag Fuzzing for XSS](web/html-tag-fuzzing-for-xss.md)
+* [GraphQL](web/graphql.md)
+* [Prototype pollution](web/prototype-pollution.md)
 * [Click Jacking](web/click-jacking.md)
 * [Web Reconnaissance](web/web-reconnaissance/README.md)
   * [Domain Name](web/web-reconnaissance/domain-name.md)

@@ -9,7 +9,7 @@ description: >-
 
 ## This is a Personal document based on the content of PortSwigger
 
-[https://portswigger.net/web-security/learning-paths/clickjacking](https://portswigger.net/web-security/learning-paths/clickjacking)
+{% embed url="https://portswigger.net/web-security/learning-paths/clickjacking" %}
 
 ## Basic HTML script for Clickjacking
 
